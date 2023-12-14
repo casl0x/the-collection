@@ -162,4 +162,3 @@ header.appendChild(pp);
 header.appendChild(titleCollection);
 
 document.body.insertBefore(header, gameCollection);
-
