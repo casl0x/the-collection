@@ -13,15 +13,37 @@ $mb-screen:550px;
     } 
 }
 
+body {
+    background-color: rgb(247,243,240);
+    header {
+        display: flex;
+        justify-content: center;
+        align-items: baseline;
+        gap: 30px;
+        img {
+            width: 60px;
+        }
+        h1 {
+            font: {
+                family: $font-title;
+                size: 5vh;
+            }
+        }
+    }
+}
 .container {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
-    .card {
+}
+.card {
+        background-color: white;
+        opacity: 0.5;
         width: 25%;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
         text-align: left;
         margin: 1rem;
+        transition: transform 0.5s ease, opacity 0.5s ease;
         @include media-maxwidth($tab-screen){
             width: 40%;
         }
@@ -35,25 +57,37 @@ $mb-screen:550px;
         img {
             width: 100%;
         }
-        &_title {
-            padding: 0 1rem;
-            font: {
-                family :$font-title;
-                size: 40px;
-            }
+        &:hover {
+            opacity: 1;
+            transform: scale(1.2);
+            z-index: 1;
         }
+    &_title {
+        padding: 0 1rem;
+        font: {
+            family :$font-title;
+            size: 40px;
+            }
+    }
+    &_info {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        opacity: 0.7;
+    }
+    &_teaser {   
+        img {
+            width: 30px;
+            margin: 5% 45%;
+            }
+    }
+    &_deletebtn {
+        border: solid 1px;
+        background-color: white;
+        &:hover{
+            color: red;
+            }
     }
 }
 
 
-/*
-    <section class="container">
-        <div class="container_card card">
-            <img src="" alt="" class="card_img">
-            <h2 class="card_title"></h2>
-            <p class="card_synopsis"></p>
-            <p class="card_genre"></p>
-            <p class="card_release"></p>
-        </div>
-    </section>
-*/
