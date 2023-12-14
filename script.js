@@ -161,5 +161,5 @@ titleCollection.textContent = "Jeux Fav'"
 header.appendChild(pp);
 header.appendChild(titleCollection);
 
-document.body.insertBefore(header, genreButton);
+document.body.insertBefore(header, gameCollection);
 
