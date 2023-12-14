@@ -17,6 +17,10 @@ body header h1 {
   font-size: 5vh;
 }
 
+.tribtn {
+  background: red;
+}
+
 .container {
   display: flex;
   flex-flow: row wrap;

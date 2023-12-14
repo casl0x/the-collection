@@ -12,7 +12,7 @@ const collection = [
     picture :"assets/image/spider-man.jpeg",
     name : "Marvel's Spider-Man",
     synopsis : "Vous y incarnez un Peter Parker aguerri combattant le crime contre des ennemis emblématiques dans le New York de Marvel. Il lutte en même temps pour trouver l’équilibre entre sa vie personnelle chaotique et sa carrière tandis que le destin des New-Yorkais est entre ses mains.",
-    genre : ["Action", " Adventure"],
+    genre : ["Action", " Aventure"],
     release : 2022,
     teaser : "https://www.youtube.com/watch?v=mrT5q5xXb7Y",
 },
@@ -161,5 +161,5 @@ titleCollection.textContent = "Jeux Fav'"
 header.appendChild(pp);
 header.appendChild(titleCollection);
 
-document.body.insertBefore(header, gameCollection);
+document.body.insertBefore(header, genreButton);
 
